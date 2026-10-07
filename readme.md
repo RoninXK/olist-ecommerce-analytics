@@ -42,71 +42,27 @@ Git / GitHub	Versionamento e publicação do projeto
 VS Code	Ambiente de desenvolvimento
 
 
-🔄 Pipeline do projeto
-Dataset Olist / Kaggle
-        │
-        ▼
-Arquivos CSV brutos
-        │
-        ▼
-Leitura e validação
-        │
-        ▼
-Limpeza e tratamento
-        │
-        ▼
-Joins entre tabelas
-        │
-        ▼
-Bases analíticas
-        │
-        ├───────────────┐
-        ▼               ▼
-     Pandas          SQLite
-        │               │
-        ▼               ▼
-      KPIs         Consultas SQL
-        │               │
-        └───────┬───────┘
-                ▼
-          Visualizações
-                │
-                ▼
-       Dashboard Streamlit
-📂 Estrutura do repositório
-olist-ecommerce-analytics/
-│
-├── images/
-│   ├── faturamento_mensal.png
-│   ├── top10_estados_faturamento.png
-│   ├── top10_categorias.png
-│   ├── formas_pagamento.png
-│   ├── distribuicao_avaliacoes.png
-│   ├── avaliacao_atraso.png
-│   ├── tempo_entrega_estados.png
-│   └── status_pedidos.png
-│
-├── sql/
-│   ├── 01_faturamento_total.sql
-│   ├── 02_vendas_por_estado.sql
-│   ├── 03_top_categorias.sql
-│   ├── 04_ticket_medio.sql
-│   ├── 05_formas_pagamento.sql
-│   ├── 06_entregas_atrasadas.sql
-│   └── 07_avaliacao_atraso.sql
-│
-├── src/
-│   ├── leitura.py
-│   ├── tratamento.py
-│   ├── estatisticas.py
-│   ├── banco.py
-│   ├── executar_sql.py
-│   └── graficos.py
-│
-├── app.py
-├── requirements.txt
-├── .gitignore
-└── README.md
+## 🔄 Pipeline do projeto
+
+```mermaid
+flowchart TD
+    A[Dataset Olist / Kaggle] --> B[Arquivos CSV brutos]
+    B --> C[Leitura e validação]
+    C --> D[Limpeza e tratamento]
+    D --> E[Joins entre tabelas]
+    E --> F[Bases analíticas]
+
+    F --> G[Pandas]
+    F --> H[SQLite]
+
+    G --> I[KPIs e análises]
+    H --> J[Consultas SQL]
+
+    I --> K[Visualizações]
+    J --> K
+
+    K --> L[Dashboard Streamlit]
+```
 📊 Principais indicadores
 O projeto calcula automaticamente indicadores como:
 - Faturamento total
