@@ -1,3 +1,16 @@
+## 📚 Dataset
+
+Este projeto utiliza o **Brazilian E-Commerce Public Dataset by Olist**, disponibilizado publicamente no Kaggle.
+
+🔗 **Download do dataset:**  
+https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce
+
+O conjunto contém dados anonimizados de aproximadamente 100 mil pedidos realizados entre 2016 e 2018 em marketplaces brasileiros.
+
+Após o download, coloque os arquivos CSV dentro de:
+
+```text
+data/raw/
 🛒 Olist E-Commerce Analytics
 Projeto de análise de dados de e-commerce desenvolvido para portfólio, utilizando Python, Pandas, SQL, SQLite, Streamlit, Plotly e Matplotlib.
 A proposta do projeto é transformar dados brutos de pedidos da Olist em uma análise completa de negócio, passando por leitura, tratamento, integração de tabelas, criação de indicadores, consultas SQL, visualizações e dashboard interativo.
