@@ -1,0 +1,27 @@
+# Ambiente virtual
+.venv/
+venv/
+
+# Python
+__pycache__/
+*.py[cod]
+
+# VS Code
+.vscode/
+
+# Dados brutos
+data/raw/
+
+# Dados processados
+data/processed/
+
+# Bancos
+*.db
+*.sqlite
+
+# Streamlit
+.streamlit/
+
+# Sistema
+.DS_Store
+Thumbs.db
